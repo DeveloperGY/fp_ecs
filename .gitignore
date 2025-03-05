@@ -1,1 +1,7 @@
 /target
+/.idea/.gitignore
+/.idea/misc.xml
+/.idea/vcs.xml
+/Cargo.lock
+/.idea/fp_ecs.iml
+/.idea/modules.xml
