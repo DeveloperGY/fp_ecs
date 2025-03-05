@@ -5,9 +5,15 @@ pub struct World {
 }
 
 impl World {
-    pub fn new() -> Self {
+    pub fn new(max_entity_count: usize) -> Self {
         Self {
-            entity_manager: EntityManager::new(),
+            entity_manager: EntityManager::new(max_entity_count),
         }
+    }
+}
+
+impl Default for World {
+    fn default() -> Self {
+        Self::new(usize::MAX)
     }
 }
